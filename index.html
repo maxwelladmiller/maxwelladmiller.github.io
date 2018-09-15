@@ -1,28 +1,115 @@
-<!DOCTYPE html>
-
 <head>
-    <title></title>
-<!-- Personal CSS -->
-<link rel='stylesheet' href='css/additions.css'>
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title> maxwelladmiller </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
+    <link rel="stylesheet" href="css/jquery.simplyscroll.css" media="all" type="text/css">
+    <!--<script type="text/javascript" src="js/moment.js"></script>-->
+    <script type="text/javascript" src="js/pages.js"></script>
+    <script type="text/javascript" src="js/scrolling.js"></script>
+    <link href="css/additions.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-sm-2 mt-3" id="myFilters">
-                <h4>View:</h4><button class="btn btn-default btn-block text-center mt-3" id="show-forms-button"><h2></h2></button></div>
+<div class="container-fluid">
+  <ul id="scroller">
+      <li><img src="css/scrolls/nodelogo.png" width="290" height="200" alt="Node"></li>
+      <li><img src="css/scrolls/jslogo.png" width="290" height="200" alt="JS"></li>
+      <li><img src="css/scrolls/HTMLlogo.png" width="290" height="200" alt="HTML"></li>
+      <li><img src="css/scrolls/CSSlogo.png" width="290" height="200" alt="CSS"></li>
+      <li><img src="css/scrolls/jQuerylogo.png" width="290" height="200" alt="jQuery"></li>
+      <li><img src="css/scrolls/bootstraplogo.png" width="290" height="200" alt="Bootstrap"></li>
+      <li><img src="css/scrolls/azurelogo.png" width="290" height="200" alt="Azure"></li>
+      <li><img src="css/scrolls/SQLServerlogo.png" width="290" height="200" alt="SQLServer"></li>
+      <li><img src="css/scrolls/expresslogo.png" width="290" height="200" alt="Express"></li>
+      <li><img src="css/scrolls/Rlogo.png" width="290" height="200" alt="R"></li>
+      <li><img src="css/scrolls/pythonlogo.png" width="290" height="200" alt="Python"></li>
+  </ul>
+    <div class="row">
+        <div class="col-md-2 col-sm-2">
+            <div class="nav nav-pills affix" role="tablist" aria-orientation="vertical">
+                <div class="navbar-collapse">
+                  <a class="nav-link active" id="page-1-link"> Mission Statement </a>
+                  <a class="nav-link inactive" id="page-2-link"> Resume </a>
+                  <a class="nav-link inactive" id="page-3-link"> About Me </a>
+                </div>
+            </div>
         </div>
+        <div class="col-md-10 col-sm-10">
+            <div class="page d-block" id="page-1">
+              <div id="shell">
+                <h1>Mission Statement</h1>
+                <div class="form-group"><label for="missionStatement"></label>
+                  <p>
+                    As a dynamic technology professional with comprehensive experience in driving strategies for the provision of exceptional Technology Related Services,
+                    I offer an expertise acquired while working in private enterprise environments that is top notch. With “big picture” vision, “get it done” leadership skills and a focus on achieving overall organizational strategic goals as strengths,
+                    I would like to explore putting my extensive Web Development skills to all interesting opportunities that arise.
+
+                    Here are a list of some of the skills I bring to the table
+                    <ul>
+                    <li>Proficiency in HTML, CSS, Javascript, and jQuery.</li>
+                    <li>Strong knowledge of Node.js for creating and deploying Web Apps.</li>
+                    <li>Working knowledge of setting up databases using SQL Server, and writing queries in SQL</li>
+                    <li>Solid experience using the R language for statistical programming as well as tools provided in R Studio.</li>
+                    <li>Long background using MATLAB for various tasks including Numerical Analysis, and Applied Linear Algebra.</li>
+                    <li>Familiarity with the programming languages C++, as well as Python.</li>
+                    </ul>
+
+                    background that includes challenging and independent work in technical fields, the outcomes of my work were continuously on time and within budget. My progressive mindset along with a collaborative and accountable approach to supporting tactical programs ensures positive results across all business areas. I am motivated, performance focused and highly engaged in Job Field. I believe in the importance of continuous improvement and staying current with best practices, evolving trends, and developments.
+
+                    A lifelong believer in the power of teamwork, I am an avid supporter of its principles in the workplace. My approach and inclusive leadership style challenge staff to become high performing team members by contributing collaboratively,
+                    building skills, and enjoying successes. Additionally, my commitment to removing performance barriers by listening, coaching, and developing each team members strengths arise from my belief in teamwork
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page d-none" id="page-2">
+              <div id="shell">
+                <h1>Resume</h1>
+                <div class="form-group"><label for="Resume"></label>
+                  WORK EXPERIENCE
+                </br></br>
+                  Full Stack Developer, Jump Analytics, Vancouver, BC March – Sept. 2018
+                  <ul>
+                  <li>Worked on a two man team to develop a web application for doing surveys and storing data from surveys in a database, hosted using Microsoft Azure.</li>
+                  <li>Began my work with Front-End Development of the HTML design for the survey form, as well as the CSS, and Javascript using the Bootstrap framework.</li>
+                  <li>Moved on to begin various Back-End Development for the web app using Node.js,  involving Back-End Validation of data coming from the form, the routing of the various web pages, and rendering data from incomplete forms back to the user to finish the form.</li>
+                  <li>Worked with setting up the database using SQL Server as well as writing various SQL queries for pulling data from the database based on the given user for the web app.</li>
+                  <li>Managed the User Testing phase of the Web App giving detailed instructions for attempting to break the functionality of the survey form, and preventing SQL injection into our database.</li>
+                  <li>Handled the Quality Assurance of the Web App fixing the various errors and bugs that were reported to me.</li>
+                  <li>Was promoted to head of new project based around collecting daily information from stables about their horses.</li>
+                  <li>Managed and mentored a new intern on front end web development, as well as user testing.</li>
+                  <li>Worked within the Azure environment to set up Virtual Machine for deploying web app and hosting website.</li>
+                  </ul>
+                  Undergraduate Research Assistant, Simon Fraser University, Burnaby, BC May – Sept. 2017
+                  <ul>
+                  <li>Worked independently, determining a process for review and analysis of papers on the field of Partial Differential Equations to gain a clear understanding of techniques used by authors.</li>
+                  <li>Generated new ideas and creative uses of material from paper working with my supervisor to extend methods used to other problems.</li>
+                  <li>Prepared written and verbal reports for Supervisor (an industry expert) using LaTeX identifying potential ways of applying these techniques for other Partial Differential Equations, contributing towards a potential paper.</li>
+                  </ul>
+                  EDUCATION
+                  <br></br>
+                  Bachelor of Science – Mathematics Major, Simon Fraser University, Burnaby, BC 2017
+                  <ul>
+                  <li>Courses Included: Computing with Calculus, Computer with Linear Algebra, Real Analysis, Probability Theory, Partial Differential Equations</li>
+                    <li>GPA: 3.47</li>
+                  </ul>
+                  Coursera Online Courses	2018
+                  <ul>
+                  <li>Courses Included: Mastering Data Analysis in Excel, Excel Skills for Business: Intermediate I & II, Managing Big Data with MySQL.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="page d-none" id="page-3">
+              <div id="shell">
+                <h1>About Me</h1>
+                <div class="form-group"><label for="About Me">About Me:</label></div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
-</body>
